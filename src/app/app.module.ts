@@ -7,13 +7,14 @@ import { AppComponent } from './app.component';
 // EBIA
 
 import { StoreModule } from '@ngrx/store';
+import { reducers } from './dynamic/store';
 
 @NgModule({
    declarations: [AppComponent],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      StoreModule.forRoot({}),
+      StoreModule.forRoot(reducers),
    ],
    providers: [],
    bootstrap: [AppComponent],
