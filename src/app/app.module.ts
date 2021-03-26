@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 
 import { StoreModule } from '@ngrx/store';
 import { actionReducerMap } from './dynamic/store/actionReducerMap';
+import { CounterComponent } from './components/counter/counter.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CounterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
