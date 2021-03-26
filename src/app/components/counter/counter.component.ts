@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { increment } from 'src/app/dynamic/store/actions';
+import { increment, multiply } from 'src/app/dynamic/store/actions';
 import { State } from 'src/app/static/types';
 
 @Component({
@@ -20,5 +20,9 @@ export class CounterComponent implements OnInit {
 
   increment(): void {
     this.store.dispatch(increment());
+  }
+
+  multiply(factor: string) {
+    this.store.dispatch(multiply({ factor: parseFloat(factor) }));
   }
 }
