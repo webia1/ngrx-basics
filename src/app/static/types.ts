@@ -1,3 +1,3 @@
 export interface State {
-   count: number;
+  count: number;
 }

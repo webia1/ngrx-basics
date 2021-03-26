@@ -7,16 +7,16 @@ import { AppComponent } from './app.component';
 // EBIA
 
 import { StoreModule } from '@ngrx/store';
-import { reducers } from './dynamic/store';
+import { actionReducerMap } from './dynamic/store/actionReducerMap';
 
 @NgModule({
-   declarations: [AppComponent],
-   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      StoreModule.forRoot(reducers),
-   ],
-   providers: [],
-   bootstrap: [AppComponent],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    StoreModule.forRoot(actionReducerMap),
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
