@@ -4,7 +4,7 @@ export type RootState = {
 
 export type IssueState = {
   entities: Issues;
-  selected: Issues;
+  selected: Array<string>;
   filter: Filter;
 };
 
