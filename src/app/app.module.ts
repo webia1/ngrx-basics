@@ -7,13 +7,13 @@ import { AppComponent } from './app.component';
 // EBIA
 
 import { StoreModule } from '@ngrx/store';
-import { actionReducerMap } from './store/counter/actionReducerMap';
-import { CounterComponent } from './components/counter/counter.component';
+import { actionReducerMap } from './store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { IssuesComponent } from './components/issues/issues.component';
 
 @NgModule({
-  declarations: [AppComponent, CounterComponent],
+  declarations: [AppComponent, IssuesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

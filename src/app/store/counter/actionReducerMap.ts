@@ -1,7 +1,7 @@
 import { ActionReducerMap } from '@ngrx/store';
-import { State } from '../../static/types';
+import { CounterState } from '../../static/types';
 import { countReducer } from './reducers';
 
-export const actionReducerMap: ActionReducerMap<State> = {
+export const countReducerMap: ActionReducerMap<CounterState> = {
   count: countReducer,
 };
