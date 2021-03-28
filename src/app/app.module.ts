@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 // EBIA
 
 import { StoreModule } from '@ngrx/store';
-import { actionReducerMap } from './dynamic/store/actionReducerMap';
+import { actionReducerMap } from './store/actionReducerMap';
 import { CounterComponent } from './components/counter/counter.component';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { increment, multiply } from 'src/app/dynamic/store/actions';
+import { increment, multiply } from 'src/app/store/actions';
 import { State } from 'src/app/static/types';
 
 @Component({
