@@ -1,10 +1,24 @@
-export interface CounterState {
-  count: number;
-}
-
-export interface IssueState {}
-
 export interface RootState {
   issue: IssueState;
-  // counter?: CounterState;
 }
+
+export interface IssueState {
+  entities: Issues;
+  filter: Filter;
+}
+
+export interface Issues {
+  [id: string]: Issue;
+}
+
+export type Issue = {
+  id: string;
+  title: string;
+  description: string;
+  priority: 'low' | 'medium' | 'high';
+  resolved: boolean;
+};
+
+export type Filter = {
+  text: string;
+};

@@ -1,3 +1,6 @@
-import { IssueState } from 'src/app/static/types';
+import { IssueState, Issues } from 'src/app/static/types';
 
-export const initialState: IssueState = {};
+export const initialState: IssueState = {
+  entities: {},
+  filter: { text: '' },
+};
