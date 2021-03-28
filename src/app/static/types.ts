@@ -1,15 +1,16 @@
-export interface RootState {
+export type RootState = {
   issue: IssueState;
-}
+};
 
-export interface IssueState {
+export type IssueState = {
   entities: Issues;
+  selected: Issues;
   filter: Filter;
-}
+};
 
-export interface Issues {
+export type Issues = {
   [id: string]: Issue;
-}
+};
 
 export type Issue = {
   id: string;
